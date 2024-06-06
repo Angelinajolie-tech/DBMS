@@ -1,0 +1,15 @@
+declare
+	n1 number; 
+	n2 number; 
+	temp number; 
+begin
+	n1:=1000; 
+	n2:=2000; 
+	dbms_output.put_line('before'); 
+	dbms_output.put_line('num1 = '|| n1 ||' num2 = '|| n2); 
+	temp := n1; 
+	n1 := n2; 
+	n2 := temp; 
+	dbms_output.put_line('after'); 
+	dbms_output.put_line('num1 = '|| n1 ||' num2 = '|| n2); 
+end;
